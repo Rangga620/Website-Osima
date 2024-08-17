@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, #f4c542, #000);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2em;
+    color: #f4c542;
+    flex: 1;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.program-kerja-container {
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    width: 85%;
+    max-height: 500px;
+    overflow-y: auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+.program-kerja-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;  /* Untuk pseudo-element */
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(244, 197, 66, 0.7), transparent 70%);
+    transform: rotate(45deg);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.card:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 8px 16px rgba(244, 197, 66, 0.9);
+}
+
+.card:hover::before {
+    opacity: 1;
+    transform: rotate(0deg) translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.3em;
+    color: #f4c542;
+    position: relative;
+    z-index: 1;
+}
+
+footer {
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+}
+
+.back-button {
+    background-color: #000;
+    color: #f4c542;
+    border: 2px solid #f4c542;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #f4c542;
+    color: #000;
+}
+
+footer p {
+    margin: 10px 0 0;
+    color: #fff;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}

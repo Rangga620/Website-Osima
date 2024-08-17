@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osima Biodata</title>
+    <link rel="stylesheet" href="Rangga Ash Raffy.css">
+</head>
+<body>
+    <div class="monopoly-card">
+        <!-- Keterangan "Biodata" di Pojok Kiri Atas -->
+        <div class="card-header">
+            <h1>Biodata</h1>
+            <img src="asset/Logo OSIMA .png" alt="Logo" class="logo">
+        </div>
+
+        <!-- Konten Kartu -->
+        <div class="box" onclick="toggleInfo('name')">
+            <img src="Osima 90/Rangga90.jpeg" alt="Foto Wakil Ketua Osima">
+            <h2>Wakil Ketua Osima</h2>
+        </div>
+
+        <div class="biodata">
+            <div class="card-section">
+                <h3 onclick="toggleInfo('name')">Nama</h3>
+                <p id="name" class="info">Rangga Ash Raffy Jannuarta</p>
+            </div>
+            <div class="card-section">
+                <h3 onclick="toggleInfo('dob')">Tempat, Tanggal Lahir</h3>
+                <p id="dob" class="info">Padang Pariaman , 29 Januari 2003</p>
+            </div>
+            <div class="card-section">
+                <h3 onclick="toggleInfo('address')">Alamat</h3>
+                <p id="address" class="info">Jln Padang - Bukittinggi No 56 , Kecamatan 2 x 11 Kayutanam , Kabupaten Padang Pariaman , Sumatera Barat</p>
+            </div>
+            <div class="card-section">
+                <h3 onclick="toggleInfo('position')">Jabatan Osima</h3>
+                <p id="position" class="info">Wakil Ketua Osima</p>
+            </div>
+            <div class="card-section">
+                <h3 onclick="toggleInfo('education')">Riwayat Pendidikan</h3>
+                <p id="education" class="info">
+                    <ul>
+                        <li>TK Citra Pirandu</li>
+                        <li>SDN 07 2 x 11 Kayutanam</li>
+                        <li>SMPT Al Ma`shum Mardiyah (2015 - 2018)</li>
+                        <li>SMAT Al Ma`shum Mardiyah (2018 - 2021)</li>
+                        <li>Universitas Djuanda (2022 - Sekarang)</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="card-section">
+                <h3 onclick="toggleInfo('batch')">Angkatan</h3>
+                <p id="batch" class="info">  Angkatan 2016 ( Nigurest Mixteen)</p>
+            </div>
+            <div class="card-section">
+                <h3 onclick="toggleInfo('motto')">Motto Hidup</h3>
+                <p id="motto" class="info">"Berani bermimpi, berani mewujudkan."</p>
+            </div>
+        </div>
+        <script src="Rangga Ash Raffy.js"></script>
+    </div>
+
+    <footer>
+        <button class="back-button" onclick="history.back()">Kembali</button>
+        <p class="copyright">&copy; 2024 Rangga Ash Raffy Jannuarta.</p>
+    </footer>    
+</body>
+</html>

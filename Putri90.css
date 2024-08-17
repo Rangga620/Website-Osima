@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #000000, #4A4A4A);
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #000;
+    padding: 20px;
+    border-bottom: 2px solid #FFD700;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #FFD700;
+    font-weight: 700;
+    margin: 0;
+}
+
+.header-content .logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+.organization-chart {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Level and Division Styles */
+.level {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.box h2 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+    color: #FFD700;
+}
+
+.box p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Division Specific Styles */
+.division {
+    margin-top: 20px;
+}
+
+.division h3 {
+    font-size: 1.5em;
+    color: #FFD700;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #FFD700;
+}
+
+footer .back-button {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+footer .back-button:hover {
+    background-color: #FFC107;
+}
+
+footer .copyright {
+    margin: 0;
+    font-size: 0.9em;
+}

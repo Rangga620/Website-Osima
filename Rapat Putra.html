@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilihan Rapat</title>
+    <link rel="stylesheet" href="Rapat Putra.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="asset/logo_al_ma_shum-removebg-preview (2).png" alt="Logo 1" class="logo">
+            <img src="asset/Logo OSIMA .png" alt="Logo 2" class="logo">
+        </div>
+        <h1>Pilihan Rapat</h1>
+    </header>
+
+    <main>
+        <div class="choices">
+            <!-- Looping through the meetings -->
+            <div class="card">
+                <div class="card-title">Pelantikan</div>
+                <button onclick="showDetails('rapat1')">Lihat Detail</button>
+            </div>
+            <div class="card">
+                <div class="card-title">Masa Orientasi Pengurus (MOP)</div>
+                <button onclick="showDetails('rapat2')">Lihat Detail</button>
+            </div>
+            <div class="card">
+                <div class="card-title">Musyawarah Kerja (Muker)</div>
+                <button onclick="showDetails('rapat3')">Lihat Detail</button>
+            </div>
+            <div class="card">
+                <div class="card-title">Musyawarah Putra (Mupa)</div>
+                <button onclick="showDetails('rapat4')">Lihat Detail</button>
+            </div>
+            <div class="card">
+                <div class="card-title">Musyawarah Perwakilan Santri (Mupersan)</div>
+                <button onclick="showDetails('rapat5')">Lihat Detail</button>
+            </div>
+            <div class="card">
+                <div class="card-title">Laporan Pertanggung Jawaban (LPJ)</div>
+                <button onclick="showDetails('rapat6')">Lihat Detail</button>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <button class="back-button" onclick="history.back()">Kembali</button>
+        <p>&copy; 2024 Rangga Ash Raffy Jannuarta</p>
+    </footer>
+
+    <script>
+        function showDetails(rapat) {
+            alert("Menampilkan detail " + rapat);
+        }
+    </script>
+</body>
+</html>

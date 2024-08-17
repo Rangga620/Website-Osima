@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.title-container h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container .logo {
+    width: 100px;
+    height: auto;
+}
+
+.acara-table {
+    width: 100%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.acara-table thead {
+    background-color: #556270;
+    color: #fff;
+}
+
+.acara-table th, .acara-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.acara-table th {
+    font-size: 1.2em;
+}
+
+.acara-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.acara-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.acara-table tbody tr:hover {
+    background-color: #74ebd5;
+    color: #fff;
+}
+
+.acara-detail {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    width: 600px;
+    z-index: 1000;
+}
+
+.acara-detail img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.acara-detail .documentation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.acara-detail .documentation li {
+    background-color: #f2f2f2;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4d4d;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.title-container h2 {
+    font-family: 'Lobster', cursive; /* Gunakan font yang telah ditambahkan */
+    font-size: 2.5em;
+    color: #fff;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container .logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Style lainnya */

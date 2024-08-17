@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acara Osima</title>
+    <link rel="stylesheet" href="Acara Osima.css">
+</head>
+<body>
+
+    <header>
+        <div class="title-container">
+            <h2 id="Acara">Acara Osima</h2>
+        </div>
+        <div class="logo-container">
+            <img src="asset/Logo OSIMA .png" alt="Logo" class="logo">
+        </div>
+    </header>
+
+    <!-- Tabel acara -->
+    <table class="acara-table">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama Acara</th>
+                <th>Tanggal</th>
+                <th>Lokasi</th>
+                <th>Deskripsi Singkat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr onclick="showDetail(1)">
+                <td>1</td>
+                <td>Pembukaan Osima</td>
+                <td>1 Januari 2024</td>
+                <td>Aula Sekolah</td>
+                <td>Acara pembukaan resmi Osima 2024.</td>
+            </tr>
+            <tr onclick="showDetail(2)">
+                <td>2</td>
+                <td>Workshop Kepemimpinan</td>
+                <td>5 Januari 2024</td>
+                <td>Ruang Serbaguna</td>
+                <td>Pelatihan kepemimpinan untuk anggota Osima.</td>
+            </tr>
+            <tr onclick="showDetail(3)">
+                <td>3</td>
+                <td>Lomba Debat</td>
+                <td>10 Januari 2024</td>
+                <td>Auditorium</td>
+                <td>Lomba debat antar kelas.</td>
+            </tr>
+            <tr onclick="showDetail(4)">
+                <td>4</td>
+                <td>Festival Musik</td>
+                <td>15 Januari 2024</td>
+                <td>Lapangan Olahraga</td>
+                <td>Festival musik dengan penampilan band siswa.</td>
+            </tr>
+            <tr onclick="showDetail(5)">
+                <td>5</td>
+                <td>Pelatihan Jurnalistik</td>
+                <td>20 Januari 2024</td>
+                <td>Ruang Kegiatan</td>
+                <td>Pelatihan dasar jurnalistik untuk anggota.</td>
+            </tr>
+            <tr onclick="showDetail(6)">
+                <td>6</td>
+                <td>Seminar Kesehatan</td>
+                <td>25 Januari 2024</td>
+                <td>Ruang Serbaguna</td>
+                <td>Seminar mengenai kesehatan dan pola hidup sehat.</td>
+            </tr>
+            <tr onclick="showDetail(7)">
+                <td>7</td>
+                <td>Pameran Seni</td>
+                <td>30 Januari 2024</td>
+                <td>Galeri Seni</td>
+                <td>Pameran karya seni siswa dan guru.</td>
+            </tr>
+            <tr onclick="showDetail(8)">
+                <td>8</td>
+                <td>Turnamen Sepak Bola</td>
+                <td>5 Februari 2024</td>
+                <td>Lapangan Sepak Bola</td>
+                <td>Turnamen sepak bola antar kelas.</td>
+            </tr>
+            <tr onclick="showDetail(9)">
+                <td>9</td>
+                <td>Workshop Kewirausahaan</td>
+                <td>10 Februari 2024</td>
+                <td>Ruang Kewirausahaan</td>
+                <td>Workshop tentang cara memulai bisnis dan kewirausahaan.</td>
+            </tr>
+            <tr onclick="showDetail(10)">
+                <td>10</td>
+                <td>Penutupan Osima</td>
+                <td>15 Februari 2024</td>
+                <td>Aula Sekolah</td>
+                <td>Acara penutupan dan evaluasi kegiatan Osima 2024.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Kontainer deskripsi dan gambar acara -->
+    <div id="detail-1" class="acara-detail">
+        <button class="close-btn" onclick="hideDetail(1)">×</button>
+        <h2>Pembukaan Osima</h2>
+        <p>Acara pembukaan resmi Osima 2024 di Aula Sekolah. Acara ini akan menandai dimulainya serangkaian kegiatan Osima sepanjang tahun. Selain pidato dari Ketua Osima, akan ada penampilan seni dari para siswa.</p>
+        <img src="https://via.placeholder.com/300x200?text=Pembukaan+Osima" alt="Pembukaan Osima">
+        <div class="documentation">
+            <h3>Dokumentasi:</h3>
+            <ul>
+                <li>Dokumentasi 1</li>
+                <li>Dokumentasi 2</li>
+                <li>Dokumentasi 3</li>
+                <li>Dokumentasi 4</li>
+                <li>Dokumentasi 5</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="detail-2" class="acara-detail">
+        <button class="close-btn" onclick="hideDetail(2)">×</button>
+        <h2>Workshop Kepemimpinan</h2>
+        <p>Workshop Kepemimpinan ini bertujuan untuk melatih dan mengembangkan keterampilan kepemimpinan bagi anggota Osima. Acara ini akan diisi dengan sesi diskusi, studi kasus, dan simulasi kepemimpinan di Ruang Serbaguna.</p>
+        <img src="https://via.placeholder.com/300x200?text=Workshop+Kepemimpinan" alt="Workshop Kepemimpinan">
+        <div class="documentation">
+            <h3>Dokumentasi:</h3>
+            <ul>
+                <li>Dokumentasi 1</li>
+                <li>Dokumentasi 2</li>
+                <li>Dokumentasi 3</li>
+                <li>Dokumentasi 4</li>
+                <li>Dokumentasi 5</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="detail-3" class="acara-detail">
+        <button class="close-btn" onclick="hideDetail(3)">×</button>
+        <h2>Lomba Debat</h2>
+        <p>Lomba debat antar kelas di Auditorium. Setiap kelas akan mengirimkan tim debatnya untuk berkompetisi dan menunjukkan kemampuan berbicara dan argumentasi mereka.</p>
+        <img src="https://via.placeholder.com/300x200?text=Lomba+Debat" alt="Lomba Debat">
+        <div class="documentation">
+            <h3>Dokumentasi:</h3>
+            <ul>
+                <li>Dokumentasi 1</li>
+                <li>Dokumentasi 2</li>
+                <li>Dokumentasi 3</li>
+                <li>Dokumentasi 4</li>
+                <li>Dokumentasi 5</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="detail-4" class="acara-detail">
+        <button class="close-btn" onclick="hideDetail(4)">×</button>
+        <h2>Festival Musik</h2>
+        <p>Festival musik dengan penampilan band siswa di Lapangan Olahraga. Acara ini merupakan kesempatan bagi siswa untuk menunjukkan bakat musik mereka dan menikmati pertunjukan dari teman-teman mereka.</p>
+        <img src="https://via.placeholder.com/300x200?text=Festival+Musik" alt="Festival Musik">
+        <div class="documentation">
+            <h3>Dokumentasi:</h3>
+            <ul>
+                <li>Dokumentasi 1</li>
+                <li>Dokumentasi 2</li>
+                <li>Dokumentasi 3</li>
+                <li>Dokumentasi 4</li>
+                <li>Dokumentasi 5</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="detail-5" class="acara-detail">
+        <button class="close-btn" onclick="hideDetail(5)">×</button>
+        <h2>Pelatihan Jurnalistik</h2>
+        <p>Pelatihan dasar jurnalistik untuk anggota di Ruang Kegiatan. Acara ini meliputi teknik penulisan berita, wawancara, dan editing untuk mempersiapkan anggota dalam dunia jurnalistik.</p>
+        <img src="https://via.placeholder.com/300x200?text=Pelatihan+Jurnalistik" alt="Pelatihan Jurnalistik">
+        <div class="documentation">
+            <h3>Dokumentasi:</h3>
+            <ul>
+                <li>Dokumentasi 1</li>
+                <li>Dokumentasi 2</li>
+                <li>Dokumentasi 3</li>
+                <li>Dokumentasi 4</li>
+                <li>Dokumentasi 5</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="detail-6" class="acara-detail">
+        <button class="close-btn" onclick="hideDetail(6)">×</button>
+        <h2>Seminar Kesehatan</h2>
+        <p>Seminar mengenai kesehatan dan pola hidup sehat di Ruang Serbaguna. Acara ini akan menghadirkan pembicara ahli yang akan membahas berbagai topik kesehatan dan memberikan tips untuk hidup sehat.</p>
+        <img src="https://via.placeholder.com/300x200?text=Seminar+Kesehatan" alt="Seminar Kesehatan">
+        <div class="documentation">
+            <h3>Dokumentasi:</h3>
+            <ul>
+                <li>Dokumentasi 1</li>
+                <li>Dokumentasi 2</li>
+                <li>Dokumentasi 3</li>
+                <li>Dokumentasi 4</li>
+                <li>Dokumentasi 5</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="detail-7" class="acara-detail">
+        <button class="close-btn" onclick="hideDetail(7)">×</button>
+        <h2>Pameran Seni</h2>
+        <p>Pameran karya seni siswa dan guru di Galeri Seni. Acara ini memberikan platform bagi peserta untuk memamerkan karya seni mereka, mulai dari lukisan, patung, hingga fotografi.</p>
+        <img src="https://via.placeholder.com/300x200?text=Pameran+Seni" alt="Pameran Seni">
+        <div class="documentation">
+            <h3>Dokumentasi:</h3>
+            <ul>
+                <li>Dokumentasi 1</li>
+                <li>Dokumentasi 2</li>
+                <li>Dokumentasi 3</li>
+                <li>Dokumentasi 4</li>
+                <li>Dokumentasi 5</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="detail-8" class="acara-detail">
+        <button class="close-btn" onclick="hideDetail(8)">×</button>
+        <h2>Turnamen Sepak Bola</h2>
+        <p>Turnamen sepak bola antar kelas di Lapangan Sepak Bola. Setiap kelas akan berkompetisi dalam pertandingan sepak bola untuk memperebutkan juara.</p>
+        <img src="https://via.placeholder.com/300x200?text=Turnamen+Sepak+Bola" alt="Turnamen Sepak Bola">
+        <div class="documentation">
+            <h3>Dokumentasi:</h3>
+            <ul>
+                <li>Dokumentasi 1</li>
+                <li>Dokumentasi 2</li>
+                <li>Dokumentasi 3</li>
+                <li>Dokumentasi 4</li>
+                <li>Dokumentasi 5</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="detail-9" class="acara-detail">
+        <button class="close-btn" onclick="hideDetail(9)">×</button>
+        <h2>Workshop Kewirausahaan</h2>
+        <p>Workshop tentang cara memulai bisnis dan kewirausahaan di Ruang Kewirausahaan. Acara ini mencakup materi tentang pengembangan ide bisnis, strategi pemasaran, dan manajemen usaha.</p>
+        <img src="https://via.placeholder.com/300x200?text=Workshop+Kewirausahaan" alt="Workshop Kewirausahaan">
+        <div class="documentation">
+            <h3>Dokumentasi:</h3>
+            <ul>
+                <li>Dokumentasi 1</li>
+                <li>Dokumentasi 2</li>
+                <li>Dokumentasi 3</li>
+                <li>Dokumentasi 4</li>
+                <li>Dokumentasi 5</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="detail-10" class="acara-detail">
+        <button class="close-btn" onclick="hideDetail(10)">×</button>
+        <h2>Penutupan Osima</h2>
+        <p>Acara penutupan dan evaluasi kegiatan Osima 2024 di Aula Sekolah. Acara ini akan menjadi momen untuk menutup rangkaian kegiatan Osima tahun ini dan memberikan penghargaan kepada para peserta.</p>
+        <img src="https://via.placeholder.com/300x200?text=Penutupan+Osima" alt="Penutupan Osima">
+        <div class="documentation">
+            <h3>Dokumentasi:</h3>
+            <ul>
+                <li>Dokumentasi 1</li>
+                <li>Dokumentasi 2</li>
+                <li>Dokumentasi 3</li>
+                <li>Dokumentasi 4</li>
+                <li>Dokumentasi 5</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="Acara Osima.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osima Biodata</title>
+    <link rel="stylesheet" href="Rangga Ash Raffy.css">
+</head>
+<body>
+    <div class="monopoly-card">
+        <!-- Keterangan "Biodata" di Pojok Kiri Atas -->
+        <div class="card-header">
+            <h1>Biodata</h1>
+            <img src="asset/Logo OSIMA .png" alt="Logo" class="logo">
+        </div>
+
+        <!-- Konten Kartu -->
+        <div class="box" onclick="toggleInfo('name')">
+            <img src="Osima 90/Erik.90.jpg" alt="Foto Anggota K2S">
+            <h2>K2S</h2>
+        </div>
+
+        <div class="biodata">
+            <div class="card-section">
+                <h3 onclick="toggleInfo('name')">Nama</h3>
+                <p id="name" class="info">Muhammad Rikmawan</p>
+            </div>
+            <div class="card-section">
+                <h3 onclick="toggleInfo('dob')">Tempat, Tanggal Lahir</h3>
+                <p id="dob" class="info">Cianjur, 19 Februari 2003</p>
+            </div>
+            <div class="card-section">
+                <h3 onclick="toggleInfo('address')">Alamat</h3>
+                <p id="address" class="info">Pondok Dukuh V - Jl. H Irun No.13-14 RT 12/RW 04, Jl. H. Irun, RT.12/RW.4, Dukuh, Kec. Kramat jati, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13550
+                </p>
+            </div>
+            <div class="card-section">
+                <h3 onclick="toggleInfo('position')">Jabatan Osima</h3>
+                <p id="position" class="info">Anggota K2S</p>
+            </div>
+            <div class="card-section">
+                <h3 onclick="toggleInfo('education')">Riwayat Pendidikan</h3>
+                <p id="education" class="info">
+                    <ul>
+                        <li>Sdn Cimanggu</li>
+                        <li>SMPT Al Ma`shum Mardiyah (2015 - 2018)</li>
+                        <li>SMAT Al Ma`shum Mardiyah (2018 - 2021)</li>
+                        <li>Universitas Pancasila (2023 - Sekarang)</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="card-section">
+                <h3 onclick="toggleInfo('batch')">Angkatan</h3>
+                <p id="batch" class="info">  Angkatan 2016 ( Nigurest Mixteen)</p>
+            </div>
+            <div class="card-section">
+                <h3 onclick="toggleInfo('motto')">Motto Hidup</h3>
+                <p id="motto" class="info">"Jangan biarkan kemarahan mempengaruhi keputusanmu."</p>
+            </div>
+        </div>
+        <script src="Rangga Ash Raffy.js"></script>
+    </div>
+
+    <footer>
+        <button class="back-button" onclick="history.back()">Kembali</button>
+        <p class="copyright">&copy; 2024 Rangga Ash Raffy Jannuarta.</p>
+    </footer>    
+</body>
+</html>
